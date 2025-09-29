@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router';
 import { FaRocket, FaBrain, FaShieldAlt, FaArrowRight, FaCheckCircle, FaPlay } from 'react-icons/fa';
 import { FiZap } from 'react-icons/fi';
 
 const Home = () => {
+    // Set dynamic document title
+    useEffect(() => {
+        document.title = "Task Master Pro - Home";
+    }, []);
+
     return (
         <div>
             {/* Hero Section */}
