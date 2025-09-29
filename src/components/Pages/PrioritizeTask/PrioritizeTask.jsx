@@ -25,6 +25,11 @@ const PrioritizeTask = () => {
     const [editingIndex, setEditingIndex] = useState(null);
     const [editText, setEditText] = useState("");
 
+    // Dynamic title
+    useEffect(() => {
+        document.title = "Prioritize Tasks - Task Master Pro";
+    }, []);
+
     // Load from localStorage on mount
     useEffect(() => {
         try {

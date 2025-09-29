@@ -12,6 +12,11 @@ const History = () => {
     const [filter, setFilter] = useState('all'); // 'all', 'high', 'medium', 'low'
     const [selectedSession, setSelectedSession] = useState(null);
 
+    // Set dynamic document title
+    useEffect(() => {
+        document.title = "History - Task Master Pro";
+    }, []);
+
     // Load history from localStorage on component mount
     useEffect(() => {
         loadHistory();

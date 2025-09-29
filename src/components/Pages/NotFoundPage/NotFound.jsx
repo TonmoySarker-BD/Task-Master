@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router';
 import { FaHome, FaRocket, FaSearch, FaCompass, FaHistory } from 'react-icons/fa';
 import { FaListCheck } from 'react-icons/fa6';
 
 const NotFound = () => {
+
+    // Dynamic title
+    useEffect(() => {
+        document.title = "404 Not Found - Task Master Pro";
+    }, []);
+
     return (
         <div className="py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-100 flex items-center justify-center px-4">
             <div className="max-w-6xl mx-auto text-center">
