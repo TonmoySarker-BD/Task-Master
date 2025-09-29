@@ -1,0 +1,1 @@
+# Task Master is a simple command-line task management application that helps you keep track of your to-do items.
