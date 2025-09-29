@@ -1,17 +1,19 @@
 import React from 'react';
 import { Outlet } from 'react-router';
+import Navbar from '../Shared/Navbar';
+import Footer from '../Shared/Footer';
 
 const RootLayout = () => {
     return (
         <>
             <header>
-                <h1>My Website</h1>
+                <Navbar></Navbar>
             </header>
-            <main>
+            <main className='min-h-[calc(100vh-200px)] -mb-20'>
                 <Outlet></Outlet>
             </main>
-            <footer>
-                <p>© 2025 My Website</p>
+            <footer className='-mb-6'>
+                <Footer></Footer>
             </footer>
         </>
     );
