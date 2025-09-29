@@ -8,41 +8,43 @@ const NotFound = () => {
         <div className="py-20 bg-gradient-to-br from-blue-50 via-white to-indigo-100 flex items-center justify-center px-4">
             <div className="max-w-6xl mx-auto text-center">
 
-                {/* Animated 404 Number */}
-                <div className="relative mb-8">
-                    <div className="text-9xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                        404
-                    </div>
-                    <div className="absolute -top-4 -right-4">
-                        <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-white text-2xl shadow-lg animate-bounce">
-                            <FaRocket className="rotate-45" />
-                        </div>
-                    </div>
-                    <div className="absolute -bottom-4 -left-4">
-                        <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center text-white text-xl shadow-lg animate-pulse">
-                            <FaSearch />
-                        </div>
-                    </div>
-                </div>
+
 
                 {/* Main Message */}
                 <div className="space-y-6 mb-12">
                     <h1 className="text-5xl font-bold text-gray-800">
                         Oops! Page Lost in Space
                     </h1>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                         The page you're looking for seems to have drifted off into the digital cosmos.
                         Don't worry, even the best explorers sometimes take wrong turns!
                     </p>
                 </div>
 
+
+
                 {/* Animated Illustration */}
                 <div className="relative mb-12">
+                    <div className="absolute -top-4 -right-4">
+                        <div className="w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center text-white text-2xl shadow-lg animate-bounce">
+                            <FaRocket className="rotate-45" />
+                        </div>
+                    </div>
                     <div className="w-64 h-64 mx-auto bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full flex items-center justify-center">
                         <div className="w-48 h-48 bg-gradient-to-br from-primary/30 to-secondary/30 rounded-full flex items-center justify-center">
                             <div className="w-32 h-32 bg-gradient-to-br from-primary/40 to-secondary/40 rounded-full flex items-center justify-center">
-                                <FaCompass className="text-4xl text-primary animate-spin-slow" />
+                                {/* Animated 404 Number */}
+                                <div className="relative mb-8">
+                                    <div className="text-9xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                                        404
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                    </div>
+                    <div className="absolute -bottom-4 -left-4">
+                        <div className="w-12 h-12 bg-red-400 rounded-full flex items-center justify-center text-white text-xl shadow-lg animate-pulse">
+                            <FaSearch />
                         </div>
                     </div>
 
@@ -58,27 +60,8 @@ const NotFound = () => {
                     </div>
                 </div>
 
-                {/* Action Buttons */}
-                {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                    <Link
-                        to="/"
-                        className="btn btn-primary btn-lg text-white font-semibold px-8 py-4 text-lg rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-3"
-                    >
-                        
-                        Back to Home
-                    </Link>
-
-                    <button
-                        onClick={() => window.history.back()}
-                        className="btn btn-outline btn-lg border-2 border-primary text-primary font-semibold px-8 py-4 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-3"
-                    >
-                        <FaArrowLeft />
-                        Go Back
-                    </button>
-                </div> */}
-
                 {/* Helpful Suggestions */}
-                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100 max-w-2xl mx-auto">
+                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 shadow-lg border border-gray-100 max-w-3xl mx-auto">
                     <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center justify-center gap-2">
                         <FaCompass className="text-primary" />
                         Quick Navigation
