@@ -34,9 +34,9 @@ const Navbar = () => {
             >
               <li>
                 <Link 
-                  to="/" 
+                  to="/prioritize" 
                   className={`text-lg font-semibold hover:bg-white/20 transition-all ${
-                    location.pathname === '/' ? 'bg-white/30 text-white' : 'text-white/90'
+                    location.pathname === '/prioritize' ? 'bg-white/30 text-white' : 'text-white/90'
                   }`}
                 >
                   <FaListCheck className="text-lg" />
@@ -73,9 +73,9 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1 gap-2">
             <li>
               <Link 
-                to="/" 
+                to="/prioritize" 
                 className={`flex items-center gap-3 text-lg font-semibold px-6 py-3 rounded-2xl transition-all ${
-                  location.pathname === '/' 
+                  location.pathname === '/prioritize' 
                     ? 'bg-white text-primary shadow-lg' 
                     : 'text-white/90 hover:bg-white/20 hover:text-white'
                 }`}

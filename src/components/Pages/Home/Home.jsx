@@ -37,10 +37,10 @@ const Home = () => {
                                     <span>Start Prioritizing</span>
                                     <FaArrowRight />
                                 </Link>
-                                <button className="btn btn-outline btn-lg border-2 border-primary text-primary font-semibold px-8 py-4 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all duration-300">
+                                <Link to="https://www.youtube.com/" target='_blank' className="btn btn-outline btn-lg border-2 border-primary text-primary font-semibold px-8 py-4 text-lg rounded-2xl hover:bg-primary hover:text-white transition-all duration-300">
                                     <FaPlay />
                                     <span>Watch Demo</span>
-                                </button>
+                                </Link>
                             </div>
 
                             <div className="flex items-center gap-6 pt-4">
